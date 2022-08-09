@@ -1,0 +1,15 @@
+/Users/kevincastro/Desktop/Programs/C#_collections/bin/Debug/net6.0/C#_collections
+/Users/kevincastro/Desktop/Programs/C#_collections/bin/Debug/net6.0/C#_collections.deps.json
+/Users/kevincastro/Desktop/Programs/C#_collections/bin/Debug/net6.0/C#_collections.runtimeconfig.json
+/Users/kevincastro/Desktop/Programs/C#_collections/bin/Debug/net6.0/C#_collections.dll
+/Users/kevincastro/Desktop/Programs/C#_collections/bin/Debug/net6.0/C#_collections.pdb
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/C#_collections.csproj.AssemblyReference.cache
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/C#_collections.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/C#_collections.AssemblyInfoInputs.cache
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/C#_collections.AssemblyInfo.cs
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/C#_collections.csproj.CoreCompileInputs.cache
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/C#_collections.dll
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/refint/C#_collections.dll
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/C#_collections.pdb
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/C#_collections.genruntimeconfig.cache
+/Users/kevincastro/Desktop/Programs/C#_collections/obj/Debug/net6.0/ref/C#_collections.dll
