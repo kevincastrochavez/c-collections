@@ -24,30 +24,71 @@
     //     Console.WriteLine(gradesOfMathStudentsB.Length);
     // }
 
+    // public static void Main(string[] args)
+    // {
+    //     int[] nums = new int[10];
+
+    //     for (int i = 0; i < nums.Length; i++)
+    //     {
+    //         nums[i] = i;
+    //     }
+
+    //     // for (int j = 0; j < nums.Length; j++)
+    //     // {
+    //     //     Console.WriteLine(nums[j]);
+    //     // }
+
+    //     foreach (int item in nums)
+    //     {
+    //         Console.WriteLine(item);
+    //     }
+
+    //     string[] bestFriends = { "Citlalli", "Cindy", "Kevin", "Vanessa", "David"};
+
+    //     foreach (string friend in bestFriends)
+    //     {
+    //         Console.WriteLine(friend);
+    //     }
+    // }
+
     public static void Main(string[] args)
     {
-        int[] nums = new int[10];
+        // Declare 2D array
+        string[,] matrix;
 
-        for (int i = 0; i < nums.Length; i++)
+        // Two dimensional array
+        int[,] array2D = new int[,]
         {
-            nums[i] = i;
-        }
+            { 1, 2, 3},
+            { 4, 5, 6},
+            { 7, 8, 9}
+        };
 
-        // for (int j = 0; j < nums.Length; j++)
-        // {
-        //     Console.WriteLine(nums[j]);
-        // }
+        Console.WriteLine(array2D[0, 0]);
 
-        foreach (int item in nums)
+        // Three dimensional array
+        int[,,] array3D = new int[,,]
         {
-            Console.WriteLine(item);
-        }
+            {
+                { 1, 2, 3},
+                { 4, 5, 6},
+                { 7, 8, 9}
+            },
+            {
+                { 11, 12, 13},
+                { 14, 15, 16},
+                { 17, 18, 19}
+            }
+        };
 
-        string[] bestFriends = { "Citlalli", "Cindy", "Kevin", "Vanessa", "David"};
+        Console.WriteLine(array3D[1, 2, 0]);
 
-        foreach (string friend in bestFriends)
-        {
-            Console.WriteLine(friend);
-        }
+
+        // Gets number of dimensions
+        int dimension2 = array2D.Rank;
+        int dimension3 = array3D.Rank;
+
+        Console.WriteLine(dimension2);
+        Console.WriteLine(dimension3);
     }
 }
