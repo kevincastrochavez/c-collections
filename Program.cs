@@ -115,26 +115,40 @@
     //     }
     // }
 
+    // public static void Main(string[] args)
+    // {
+    //     // Declare array and amount of nested arrays
+    //     int[][] jaggedArray = new int[3][];
+
+    //     // Assign amount of values to each array
+    //     jaggedArray[0] = new int[5];
+    //     jaggedArray[1] = new int[3];
+    //     jaggedArray[2] = new int[2];
+
+    //     jaggedArray[0] = new int[] { 2, 3, 5, 7, 11 };
+    //     jaggedArray[1] = new int[] { 1, 2, 3 };
+    //     jaggedArray[2] = new int[] { 13, 21 };
+
+
+    //     // Second way
+    //     int[][] jaggedArrayTwo = new int[][]
+    //     {
+    //         new int[] { 2, 3, 5, 7, 11},
+    //         new int[] { 1, 2, 3}
+    //     };
+    // }
+
     public static void Main(string[] args)
     {
-        // Declare array and amount of nested arrays
-        int[][] jaggedArray = new int[3][];
-
-        // Assign amount of values to each array
-        jaggedArray[0] = new int[5];
-        jaggedArray[1] = new int[3];
-        jaggedArray[2] = new int[2];
-
-        jaggedArray[0] = new int[] { 2, 3, 5, 7, 11 };
-        jaggedArray[1] = new int[] { 1, 2, 3 };
-        jaggedArray[2] = new int[] { 13, 21 };
-
-
-        // Second way
-        int[][] jaggedArrayTwo = new int[][]
+        string[][] friendsArray = new string[][]
         {
-            new int[] { 2, 3, 5, 7, 11},
-            new int[] { 1, 2, 3}
+            new string[] { "Cindy", "Citlalli"},
+            new string[] { "Hector", "Alicia"},
+            new string[] { "Jared", "Hector"}
         };
+
+        Console.WriteLine($"Hi {friendsArray[0][0]}, I would like to introduce {friendsArray[0][1]} to you");
+        Console.WriteLine($"Hi {friendsArray[1][0]}, I would like to introduce {friendsArray[1][1]} to you");
+        Console.WriteLine($"Hi {friendsArray[2][0]}, I would like to introduce {friendsArray[2][1]} to you");
     }
 }
