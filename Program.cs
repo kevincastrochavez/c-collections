@@ -92,26 +92,49 @@
     //     Console.WriteLine(dimension3);
     // }
 
+    // public static void Main(string[] args)
+    // {
+    //     int[,] matrix =
+    //     {
+    //         { 1, 2, 3 },
+    //         { 4, 5, 6 },
+    //         { 7, 8, 9 }
+    //     };
+
+    //     // Outer loop
+    //     for (int i = 0; i < matrix.GetLength(0); i++)
+    //     {
+    //         // Inner loop
+    //         for (int j = 0; j < matrix.GetLength(1); j++)
+    //         {
+    //             if (matrix[i,j] % 2 != 0)
+    //             {
+    //                 Console.WriteLine(matrix[i,j]);
+    //             }
+    //         }
+    //     }
+    // }
+
     public static void Main(string[] args)
     {
-        int[,] matrix =
-        {
-            { 1, 2, 3 },
-            { 4, 5, 6 },
-            { 7, 8, 9 }
-        };
+        // Declare array and amount of nested arrays
+        int[][] jaggedArray = new int[3][];
 
-        // Outer loop
-        for (int i = 0; i < matrix.GetLength(0); i++)
+        // Assign amount of values to each array
+        jaggedArray[0] = new int[5];
+        jaggedArray[1] = new int[3];
+        jaggedArray[2] = new int[2];
+
+        jaggedArray[0] = new int[] { 2, 3, 5, 7, 11 };
+        jaggedArray[1] = new int[] { 1, 2, 3 };
+        jaggedArray[2] = new int[] { 13, 21 };
+
+
+        // Second way
+        int[][] jaggedArrayTwo = new int[][]
         {
-            // Inner loop
-            for (int j = 0; j < matrix.GetLength(1); j++)
-            {
-                if (matrix[i,j] % 2 != 0)
-                {
-                    Console.WriteLine(matrix[i,j]);
-                }
-            }
-        }
+            new int[] { 2, 3, 5, 7, 11},
+            new int[] { 1, 2, 3}
+        };
     }
 }
