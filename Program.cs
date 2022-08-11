@@ -138,17 +138,41 @@
     //     };
     // }
 
+    // public static void Main(string[] args)
+    // {
+    //     string[][] friendsArray = new string[][]
+    //     {
+    //         new string[] { "Cindy", "Citlalli"},
+    //         new string[] { "Hector", "Alicia"},
+    //         new string[] { "Jared", "Hector"}
+    //     };
+
+    //     Console.WriteLine($"Hi {friendsArray[0][0]}, I would like to introduce {friendsArray[0][1]} to you");
+    //     Console.WriteLine($"Hi {friendsArray[1][0]}, I would like to introduce {friendsArray[1][1]} to you");
+    //     Console.WriteLine($"Hi {friendsArray[2][0]}, I would like to introduce {friendsArray[2][1]} to you");
+    // }
+
     public static void Main(string[] args)
     {
-        string[][] friendsArray = new string[][]
-        {
-            new string[] { "Cindy", "Citlalli"},
-            new string[] { "Hector", "Alicia"},
-            new string[] { "Jared", "Hector"}
-        };
+        int[] gradesArray = new int[] { 15, 13, 8, 12, 6, 16};
+        double averageResult = GetAverage(gradesArray);
 
-        Console.WriteLine($"Hi {friendsArray[0][0]}, I would like to introduce {friendsArray[0][1]} to you");
-        Console.WriteLine($"Hi {friendsArray[1][0]}, I would like to introduce {friendsArray[1][1]} to you");
-        Console.WriteLine($"Hi {friendsArray[2][0]}, I would like to introduce {friendsArray[2][1]} to you");
+        Console.WriteLine(averageResult);
+        
+        static double GetAverage(int[] gradesArray)
+        {
+            int size = gradesArray.Length;
+            double average;
+            int sum = 0;
+
+            for (int i = 0; i < size; i++)
+            {
+                sum += gradesArray[i];
+            }
+
+            average = (double)sum  / size;
+
+            return average;
+        }
     }
 }
