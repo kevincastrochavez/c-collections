@@ -51,44 +51,64 @@
     //     }
     // }
 
+    // public static void Main(string[] args)
+    // {
+    //     // Declare 2D array
+    //     string[,] matrix;
+
+    //     // Two dimensional array
+    //     int[,] array2D = new int[,]
+    //     {
+    //         { 1, 2, 3},
+    //         { 4, 5, 6},
+    //         { 7, 8, 9}
+    //     };
+
+    //     Console.WriteLine(array2D[0, 0]);
+
+    //     // Three dimensional array
+    //     int[,,] array3D = new int[,,]
+    //     {
+    //         {
+    //             { 1, 2, 3},
+    //             { 4, 5, 6},
+    //             { 7, 8, 9}
+    //         },
+    //         {
+    //             { 11, 12, 13},
+    //             { 14, 15, 16},
+    //             { 17, 18, 19}
+    //         }
+    //     };
+
+    //     Console.WriteLine(array3D[1, 2, 0]);
+
+
+    //     // Gets number of dimensions
+    //     int dimension2 = array2D.Rank;
+    //     int dimension3 = array3D.Rank;
+
+    //     Console.WriteLine(dimension2);
+    //     Console.WriteLine(dimension3);
+    // }
+
     public static void Main(string[] args)
     {
-        // Declare 2D array
-        string[,] matrix;
-
-        // Two dimensional array
-        int[,] array2D = new int[,]
+        int[,] matrix =
         {
-            { 1, 2, 3},
-            { 4, 5, 6},
-            { 7, 8, 9}
+            { 1, 2, 3 },
+            { 4, 5, 6 },
+            { 7, 8, 9 }
         };
 
-        Console.WriteLine(array2D[0, 0]);
-
-        // Three dimensional array
-        int[,,] array3D = new int[,,]
+        // Outer loop
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
+            // Inner loop
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
-                { 1, 2, 3},
-                { 4, 5, 6},
-                { 7, 8, 9}
-            },
-            {
-                { 11, 12, 13},
-                { 14, 15, 16},
-                { 17, 18, 19}
+                Console.WriteLine(matrix[i,j]);
             }
-        };
-
-        Console.WriteLine(array3D[1, 2, 0]);
-
-
-        // Gets number of dimensions
-        int dimension2 = array2D.Rank;
-        int dimension3 = array3D.Rank;
-
-        Console.WriteLine(dimension2);
-        Console.WriteLine(dimension3);
+        }
     }
 }
