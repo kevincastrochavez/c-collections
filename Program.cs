@@ -152,27 +152,53 @@
     //     Console.WriteLine($"Hi {friendsArray[2][0]}, I would like to introduce {friendsArray[2][1]} to you");
     // }
 
+    // public static void Main(string[] args)
+    // {
+    //     int[] gradesArray = new int[] { 15, 13, 8, 12, 6, 16};
+    //     double averageResult = GetAverage(gradesArray);
+
+    //     Console.WriteLine(averageResult);
+        
+    //     static double GetAverage(int[] gradesArray)
+    //     {
+    //         int size = gradesArray.Length;
+    //         double average;
+    //         int sum = 0;
+
+    //         for (int i = 0; i < size; i++)
+    //         {
+    //             sum += gradesArray[i];
+    //         }
+
+    //         average = (double)sum  / size;
+
+    //         return average;
+    //     }
+    // }
+
     public static void Main(string[] args)
     {
-        int[] gradesArray = new int[] { 15, 13, 8, 12, 6, 16};
-        double averageResult = GetAverage(gradesArray);
+        // Params keyword
+        Console.WriteLine("Price is {0}, PI is {1} and at is {2}", 34, 3.14, "@");
 
-        Console.WriteLine(averageResult);
-        
-        static double GetAverage(int[] gradesArray)
+        // ParamsMethod("This", "is", "a", "sentence");
+        ParamsMethod2("Hello", 5.3, 4);
+    }
+
+    // Params keyword allows you to pass as many parameters as we want, or no parameters at all
+    public static void ParamsMethod(params string[] sentence)
+    {
+        for (int i = 0; i < sentence.Length; i++)
         {
-            int size = gradesArray.Length;
-            double average;
-            int sum = 0;
+            Console.WriteLine(sentence[i]);
+        }
+    }
 
-            for (int i = 0; i < size; i++)
-            {
-                sum += gradesArray[i];
-            }
-
-            average = (double)sum  / size;
-
-            return average;
+    public static void ParamsMethod2(params object[] stuff)
+    {
+        foreach (object obj in stuff)
+        {
+            Console.WriteLine(obj);
         }
     }
 }
