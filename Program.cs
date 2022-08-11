@@ -107,7 +107,10 @@
             // Inner loop
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
-                Console.WriteLine(matrix[i,j]);
+                if (matrix[i,j] % 2 != 0)
+                {
+                    Console.WriteLine(matrix[i,j]);
+                }
             }
         }
     }
