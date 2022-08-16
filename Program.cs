@@ -176,29 +176,29 @@
     //     }
     // }
 
-    public static void Main(string[] args)
-    {
-        // Params keyword
-        Console.WriteLine("Price is {0}, PI is {1} and at is {2}", 34, 3.14, "@");
+    // public static void Main(string[] args)
+    // {
+    //     // Params keyword
+    //     Console.WriteLine("Price is {0}, PI is {1} and at is {2}", 34, 3.14, "@");
 
-        // ParamsMethod("This", "is", "a", "sentence");
-        ParamsMethod2("Hello", 5.3, 4);
-    }
+    //     // ParamsMethod("This", "is", "a", "sentence");
+    //     ParamsMethod2("Hello", 5.3, 4);
+    // }
 
-    // Params keyword allows you to pass as many parameters as we want, or no parameters at all
-    public static void ParamsMethod(params string[] sentence)
-    {
-        for (int i = 0; i < sentence.Length; i++)
-        {
-            Console.WriteLine(sentence[i]);
-        }
-    }
+    // // Params keyword allows you to pass as many parameters as we want, or no parameters at all
+    // public static void ParamsMethod(params string[] sentence)
+    // {
+    //     for (int i = 0; i < sentence.Length; i++)
+    //     {
+    //         Console.WriteLine(sentence[i]);
+    //     }
+    // }
 
-    public static void ParamsMethod2(params object[] stuff)
-    {
-        foreach (object obj in stuff)
-        {
-            Console.WriteLine(obj);
-        }
-    }
+    // public static void ParamsMethod2(params object[] stuff)
+    // {
+    //     foreach (object obj in stuff)
+    //     {
+    //         Console.WriteLine(obj);
+    //     }
+    // }
 }
