@@ -194,11 +194,11 @@
     //     }
     // }
 
-    // public static void ParamsMethod2(params object[] stuff)
-    // {
-    //     foreach (object obj in stuff)
-    //     {
-    //         Console.WriteLine(obj);
-    //     }
-    // }
+    public static void ParamsMethod2(params object[] stuff)
+    {
+        foreach (object obj in stuff)
+        {
+            Console.WriteLine(obj);
+        }
+    }
 }
