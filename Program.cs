@@ -1,4 +1,5 @@
-﻿class Program
+﻿using System.Globalization;
+class Program
 {
     // public static void Main(string[] args)
     // {
@@ -207,11 +208,29 @@
         /////////////////////////////////////////
         // Review for CSE 212 class
 
+        // Fixed arrays can't grow or shrink
+        // Faster memory alloaction, less memory
+
         // var numbers = new int[3];
-         var numbers = new[] { 1, 2, 3 };
-        numbers[0] = 1;
-        numbers[1] = 2;
-        numbers[2] = 3;
+        // var numbers = new[] { 1, 2, 3 };
+        // numbers[0] = 1;
+        // numbers[1] = 2;
+        // numbers[2] = 3;
+
+        // foreach (int number in numbers)
+        // {
+        //     Console.WriteLine(number);
+        // }
+
+
+        // Dynamic arras can grow and shrink
+        // Overflow is when memory belongs to another vairable
+        // A dynamic array is a List
+
+        var numbers = new List<int>(); 
+        numbers.Add(1);
+        numbers.Add(2);
+        numbers.Add(3);
 
         foreach (int number in numbers)
         {
