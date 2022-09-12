@@ -201,4 +201,22 @@
             Console.WriteLine(obj);
         }
     }
+
+    public static void Main(string[] args)
+    {
+        /////////////////////////////////////////
+        // Review for CSE 212 class
+
+        // var numbers = new int[3];
+         var numbers = new[] { 1, 2, 3 };
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
+
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+    }
+    
 }
